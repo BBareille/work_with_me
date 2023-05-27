@@ -65,3 +65,10 @@
     0% { width: 0}
     100% {width: 120px}
 }
+
+
+@media screen and (max-width: 1350px){
+    .menu {
+        margin-left: 100px;
+    }
+}

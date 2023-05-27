@@ -35,3 +35,9 @@
     border: white 1px solid;
     background-color: #202020;
 }
+
+@media screen and (max-width: 1350px){
+    .contact {
+        font-size: 2em;
+    }
+}

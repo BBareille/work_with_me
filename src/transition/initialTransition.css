@@ -1,0 +1,12 @@
+.container-transition{
+    position: absolute;
+    inset: 0;
+    display: flex;
+}
+
+.bigSquare{
+    position: relative;
+    z-index: 1500;
+    width: 100%;
+    background-color: black;
+}
