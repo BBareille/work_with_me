@@ -26,9 +26,8 @@
 
 .button-project {
     color: white;
-    position: absolute;
-    transform: translateX(290px);
-    margin-left: 30px;
+    position: relative;
+    margin-left: 10px;
     width: 40px;
     height: 20px;
     border-radius: 20px;

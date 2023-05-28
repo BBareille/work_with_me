@@ -8,6 +8,7 @@
     max-width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    overflow: visible;
 }
 
 @media screen and (max-width: 830px) {
@@ -31,7 +32,8 @@
     position: absolute;
 }
 .title {
-    top: 700px;
+    height: 300px;
+    top: 600px;
     left: -20px;
     font-size: 15em;
     color: rgb(98, 98, 98, 0.5);
@@ -39,7 +41,7 @@
     text-transform: uppercase;
     letter-spacing: -15px;
     word-spacing: 40px;
-    line-height: 0;
+    line-height: 250px;
     font-family: lato-black;
     position: absolute;
 }
@@ -48,14 +50,14 @@
 {
     .title {
         font-size: 12em;
-        top: 650px;
+        top: 600px;
     }
 }
 
 @media screen and (max-width: 1400px){
     .title {
         font-size: 10em;
-        top: 600px;
+        top: 500px;
     }
     .name {
         font-size: 15em;

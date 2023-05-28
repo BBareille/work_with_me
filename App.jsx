@@ -10,7 +10,7 @@ const App = () => {
     document.title = "Baptiste Bareille - Web Developer"
 
     return (
-        <AnimatePresence mode={"wait"}>
+        <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<MainMenu/>}/>
                 <Route path="/projects" element={<Project/>}/>

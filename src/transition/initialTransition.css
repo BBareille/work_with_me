@@ -2,11 +2,31 @@
     position: absolute;
     inset: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bigSquare{
-    position: relative;
-    z-index: 1500;
-    width: 100%;
+    position: absolute;
+    z-index:200;
+    width: 100vw;
     background-color: black;
+}
+
+.container-transition-text {
+    position: absolute;
+    z-index: 200;
+    display: flex;
+}
+
+.text-transition {
+    /*display: inline-block;*/
+    margin: 0;
+    line-height: 1em;
+    font-family: lato-black;
+    font-size: 80px;
+    background: linear-gradient(to top, white 100%, black 0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

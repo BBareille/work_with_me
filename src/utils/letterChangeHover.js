@@ -3,7 +3,6 @@ export function changeLetterRandom(ev, baseMessage)
     const message = ev.target.innerHTML
 
     let timePerLetter = 100 * (1/Math.log(message.length));
-    console.log(timePerLetter)
     let arrayOfLetters = message.split('');
     const characters = "0123456789";
 
@@ -11,7 +10,6 @@ export function changeLetterRandom(ev, baseMessage)
     for (let j=0; j+1<message.length; j++)
     {
          setTimeout(()=> {
-             console.log(j)
 
              if(j > 0)
              {
@@ -54,7 +52,6 @@ export function reverseChangeLetterRandom(ev, baseMessage)
             ev.target.innerHTML = arrayOfLetters.join('')
             arrayOfLetters[j-2] = characters.charAt(Math.floor(Math.random() * characters.length));
             ev.target.innerHTML = arrayOfLetters.join('')
-
         }, (timePerLetter * u))
 
     }
