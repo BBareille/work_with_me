@@ -1,6 +1,6 @@
 import {Route, useLocation, Routes} from "react-router-dom";
 import {AnimatePresence} from "framer-motion";
-import {Project} from "/src/pages/MainMenu/Project.jsx";
+import {Project} from "/src/pages/Project/Project.jsx";
 import MainMenu from "/src/pages/MainMenu/MainMenu.jsx";
 import React from "react";
 

@@ -3,21 +3,34 @@ import "./menu.css"
 import {Link} from "react-router-dom";
 
 
-const Menu = () => {
+const Menu = (props) => {
 
-    let menuName = ["Projects", "Github","About me", "Contact"]
-    let linkTo = ["/projects", "https://github.com/BBareille" , "", ""]
+    let {currentDescription, updateCurrentDescription} = props;
+
+    let menuItems = props.menuItems;
+
+    function mouseEnter(ev, item)
+    {
+        if(item.textDescription){
+            updateCurrentDescription({
+                textDescription : item.textDescription,
+                image : item.image
+            })
+        }
+        changeLetterRandom(ev, item.menuName)
+    }
+
 
     return (
 
         <ul className="menu">
-            {menuName.map((name, id) => {
+            {menuItems.map((item, id) => {
                 return(
                     <li key={id}><p className='menu-number'> 0{id+1} </p>
-                        <Link to={linkTo[id]} className="menu-item"
-                              onMouseLeave={(ev) => reverseChangeLetterRandom(ev, name)}
-                              onMouseEnter={(ev) => changeLetterRandom(ev, name)}>
-                            {name}</Link></li>
+                        <Link to={item.linkTo} className="menu-item"
+                              onMouseLeave={(ev) => reverseChangeLetterRandom(ev, item.menuName)}
+                              onMouseEnter={(ev) => mouseEnter(ev, item)}>
+                            {item.menuName}</Link></li>
                 )
             })}
            </ul>

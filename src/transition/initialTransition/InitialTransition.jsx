@@ -1,5 +1,5 @@
 import {motion} from "framer-motion";
-import "./initialTransition.css"
+import "/src/transition/initialTransition/initialTransition.css"
 
 const blackBox = {
     initial: {
