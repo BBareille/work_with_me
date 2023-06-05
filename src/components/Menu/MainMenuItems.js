@@ -1,4 +1,4 @@
-export const MainMenuItems = [
+export const menuItems = [
     {
         menuName : "Projects",
         linkTo : "/projects"

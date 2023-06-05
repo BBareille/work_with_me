@@ -9,7 +9,7 @@ import {InitialTransition} from "/src/transition/initialTransition/InitialTransi
 import {motion} from "framer-motion";
 import {containerBackGround, textBackGround} from "/src/utils/backgroundTransition.js";
 import "./mainMenu.css"
-import {menuItems} from "/src/components/Menu/ProjectMenuItems.js";
+import {menuItems} from "/src/components/Menu/MainMenuItems.js";
 
 const MainMenu = () => {
 

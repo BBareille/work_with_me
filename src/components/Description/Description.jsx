@@ -1,11 +1,16 @@
+import "./description.css"
 export const Description = (props) => {
 
     let {currentDescription} = props;
-    console.log(currentDescription)
-    return (
-        <div>
-            <p>{currentDescription?currentDescription.textDescription:"No desc"}</p>
-            <img src={currentDescription.image}/>
-        </div>
-    )
+
+    if(currentDescription){
+        return (
+            <div className="description-container">
+                <p className="description-text">{currentDescription.textDescription?currentDescription.textDescription:"No desc"}</p>
+                {currentDescription.image?
+                    currentDescription.image.map(item => <img className="description-image" src={item}/>): ""}
+            </div>
+        )
+    }
+
 }

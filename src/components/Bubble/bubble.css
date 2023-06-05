@@ -1,0 +1,18 @@
+.bubble {
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    z-index: -50;
+    background-color: white;
+    border-radius: 400px;
+    height: 400px;
+    width: 400px;
+}
+
+.bubble-image {
+    position: relative;
+    top: 220px;
+    left: 40px;
+    height: calc(23px*4);
+    width: calc(40px*4);
+}

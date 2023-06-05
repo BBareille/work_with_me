@@ -1,0 +1,14 @@
+.description-container {
+    margin-right: 200px;
+}
+
+.description-text {
+    font-family: lato-light;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.description-image {
+    width: 200px;
+}

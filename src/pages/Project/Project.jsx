@@ -8,6 +8,7 @@ import Menu from "/src/components/Menu/Menu.jsx";
 import "./project.css"
 import {Description} from "/src/components/Description/Description.jsx";
 import {menuItems} from "/src/components/Menu/ProjectMenuItems.js";
+import {Bubble} from "/src/components/Bubble/Bubble.jsx";
 
 const Project = () => {
     const [currentDescription, updateCurrentDescription] = useState(
@@ -30,10 +31,11 @@ const Project = () => {
                         className="projectBackground">Projects
                     </motion.div>
                 </motion.section>
-                <Container >
+                <Container>
                     <Menu menuItems={menuItems} currentDescription={currentDescription} updateCurrentDescription={updateCurrentDescription}/>
                     <Description currentDescription={currentDescription}/>
                 </Container>
+                <Bubble />
             </FollowRound>
     )
 }
